@@ -1,0 +1,56 @@
+.heading {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.heading h2 {
+    font-size: 150px;
+}
+
+#pageOne p {
+    text-align: center;
+}
+
+.button {
+    text-align: center;
+    margin-top: 40px;
+    background-color: hotpink;
+    border-radius: 5px;
+    color: white;
+    padding: .5em;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.btn-secondary {
+    background: transparent;
+}
+
+#timer {
+    text-align: center;
+    margin-top: 60px;
+    background-color: hotpink;
+    border-radius: 5px;
+    color: white;
+    padding: .5em;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.questions {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.score {
+    text-align: center;
+}
+
+.score h2 {
+    color: hotpink;
+    font-size: 48px;
+}
+
+.score p {
+    font-size: 24px;
+}

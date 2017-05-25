@@ -1,0 +1,136 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <title>Trivia Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row col-md-12 heading">
+            <h2>Code Trivia</h2>
+        </div>
+        <div id="pageOne">
+            <p>Once you hit the Git Start button you will have 30 seconds to answer 6 code based questions. Click submit when you're done for your score!</p>
+            <div class="row">
+                <div class="col-md-5"></div>
+                <div class="col-md-2 button">
+                    <button type="button" class="btn btn-secondary" id="gitGo">Git Go</button>
+                </div>
+                <div class="row col-md-5"></div>
+            </div>
+        </div>
+        <div id="pageTwo">
+            <div class="row">
+                <div class="col-md-5 "></div>
+                <div class="row col-md-2" id="timer"></div>
+                <div class="row col-md-5 "></div>
+            </div>
+            <div class="row">
+            </div>
+            <div class="container questions">
+                <div class="col-md-2"></div>
+                <div class="row col-md-8">
+                    <h3>Which answer will upload your edited files to your git repo?</h3>
+                    <form>
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio group1" value="wrong" id="answer">git commit
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio group1" value="wrong" id="answer">git upload
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio group1" value="correct" id="answer">git push
+                        </label>
+                    </form>
+                    <h3>Which of these must you have for a static web page?</h3>
+                    <form>
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio group2" value="correct" id="answer">HTML
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio group2" value="wrong" id="answer">AJAX
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio group2" value="wrong" id="answer">jQuery
+                        </label>
+                    </form>
+                    <h3>Which method will edit your DOM?</h3>
+                    <form>
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio group3" value="wrong" id="answer">.on("click",)
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio group3" value="correct" id="answer">.html()
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio group3" value="wrong" id="answer">.done()
+                        </label>
+                    </form>
+                    <h3>Which of these are types of databases?</h3>
+                    <form>
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio group4" value="wrong" id="answer">container
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio group4" value="wrong" id="answer">glass jar
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio group4" value="correct" id="answer">mongo
+                        </label>
+                    </form>
+                    <h3>Which of these represents an array?</h3>
+                    <form>
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio group5" value="wrong" id="answer">" "
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio group5" value="correct" id="answer">[ ]
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio group5" value="wrong" id="answer">{ }
+                        </label>
+                    </form>
+                    <h3>What measurement must a setTimeout() be in?</h3>
+                    <form>
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio group6" value="correct" id="answer">milliseconds
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio group6" value="wrong" id="answer">seconds
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio group6" value="wrong" id="answer">minutes
+                        </label>
+                    </form>
+                </div>
+                <div class="row col-md-2 "></div>
+            </div>
+            <div class="row">
+                <div class="col-md-5"></div>
+                <div class="col-md-2 button">
+                    <button type="button" class="btn btn-secondary" id="gitScore">Git Score</button>
+                </div>
+                <div class="row col-md-5"></div>
+            </div>
+        </div>
+        <div id=pageThree ">
+            <div class="row ">
+                <div class="col-md-3 "></div>
+                <div class="col-md-6 score ">
+                    <h2>Your Score</h2>
+                    <p>Correct:</p>
+                    <p class="numCorrect "></p>
+                   <p>Incorrect:</p>
+                   <p class="numWrong "></p>
+                 </div>
+                <div class="col-md-3 "></div>
+            </div>
+        </div>
+</body>
+
+</html>
